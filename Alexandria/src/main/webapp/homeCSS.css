@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif; 
+}
+
+.main-background{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url("./images/main-background.jpg");
+	background-position: center;
+	background-size: cover; 
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box; 
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+	/* 
+	background-color: #F00;
+	opacity: 0.5;
+	*/
+}
+
+.logo{
+	width: 50px;
+}
+
+.menu-icon{
+	width: 50px; 
+	cursor: pointer;
+	margin-left: 40px; 
+}
+
+.main-content{
+	display: flex;
+	height: 70%;
+	align-items: center;
+}
+
+.main-content-entry{
+	flex-basis: 50%; 
+}
+
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover; 
+	transition: transform 0.5s;
+	/* background-image: */
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+.card1{
+	background-image: url(images/sea-bear.png);
+}
+
+.card2{
+	background-image: url(images/sexy.jpg);
+}
+
+.card3{
+	background-image: url(images/smothering.jpg);
+}
+
+.card4{
+	background-image: url(images/saxton.jpg);
+}
+
+h1{
+	color: #fff;
+	font-size: 100px; 
+}
+
+p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 15px; 
+}
+
+button{
+	width: 180px; 
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 20px; 
+	cursor: pointer; 
+}
+
+nav{
+	flex: 1;
+	text-align: right; 
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px; 
+}
+
+nav ul li a{
+	text-decoration: none; 
+	color: #fff;
+	font-size: 13px; 
+}
