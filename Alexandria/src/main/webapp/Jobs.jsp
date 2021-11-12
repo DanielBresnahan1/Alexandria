@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="JobsCarousel.css" type="text/css">
+<link rel="stylesheet" href="webapp/JobsCarousel.css" type="text/css">
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>

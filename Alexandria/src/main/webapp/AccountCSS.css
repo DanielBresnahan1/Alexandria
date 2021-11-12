@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body {
+	background-image: url('library.jpg'); 
+	background-repeat: no-repeat; 
+	background-size:1920px 1080px;
+}
+
+#loginDiv {
+	margin-left:1100px;
+}
+
+#userNameBlock {
+	margin-bottom:10px;
+}
+
+#userNameLabel {
+	color: white;
+}
+
+#passwordLabel {
+	color:white;
+}
+
+#logOutButtonDiv {
+	display:none;
+}
+
+#logoutButton {
+	margin-left:1200px;
+	display:none;
+}
+
+#pleaseLoginId {
+	color:white;
+}
+
+#checkedOutBooksHeading {
+	color:white;
+}
+
+#checkedOutBooksDiv {
+	margin-left:600px;
+	display: none;
+	color: white;
+}
