@@ -29,24 +29,18 @@
 		<div class="header" style="display: flex; align-items: center;">
 			<h1>My Account</h1>
 			<form style="margin-left: 25px;">
-				<!-- 
-		   	 	<label id="userNameLabel" style="color: #fff">Username: </label>
-				<input type="text" id="username"/><br/>
-				<label id="passwordLabel" style="color: #fff">Password: </label>
-				<input type="text" id="password"/><br/>
-				 -->
 				<input type="text" id="username" placeholder="Username..."><br>
 				<input type="password" id="password" placeholder="Password..."><br>
 			</form>
 			<!-- use display:none to hide other button when appropriate? -->
 			<!-- append "display:none" to the style of unwanted button and it will work -->
 			<!-- "style="margin-top: 0px; margin-left: 25px; display:none" -->
-			<button type="button" onclick="login()"                    style="margin-top: 0px; margin-left: 25px;">Login</button>
+			<button type="button" onclick="login()"  id="loginButton" style="margin-top: 0px; margin-left: 25px;">Login</button>
 			<button type="button" onclick="logout()" id="logoutButton" style="margin-top: 0px; margin-left: 25px;">Logout</button>
 
 		</div>
 		
-		<div class="main-content">
+		<div class="main-content" id="mainContent" style="display:none">
 			<div class="main-content-entry">
 				<!-- Books are cards. Below is a template example. -->
 				<!-- Also should probably make it so the image path is from /usr/share/images on the ubuntu server. -->
