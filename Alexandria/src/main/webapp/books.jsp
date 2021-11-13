@@ -10,24 +10,27 @@
 <body>
 
 	<div class="main-background">
+	
 		<div class="navbar">
 			<img src="images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
-					<li><a href="home.html">HOME</a></li>
-					<li><a href="books.html">BOOKS</a></li>
-					<li><a href="accounts.html">MY ACCOUNT</a></li>
+					<li><a href="home.jsp">HOME</a></li>
+					<li><a href="books.jsp">BOOKS</a></li>
+					<li><a href="Account.jsp">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
 			<img src="images/menu.png" class="menu-icon">
 		</div>
+		
 		<div class="header" style="display: flex; align-items: center;">
 			<h1>Books</h1>
-			<a href="search.html">
+			<a href="search.jsp">
 				<button type="button" style="margin-top: 0px; margin-left: 25px;">Search Library</button>
 			</a>
 		</div>
+		
 		<div class="main-content">
 			<div class="main-content-entry">
 				<div class="card" style="background-image: url(images/books/kill-mockingbird.jpg);">

@@ -15,9 +15,9 @@
 			<!-- need better image logo -->
 			<nav>
 				<ul>
-					<li><a href="home.html">HOME</a></li>
-					<li><a href="books.html">BOOKS</a></li>
-					<li><a href="accounts.html">MY ACCOUNT</a></li>
+					<li><a href="home.jsp">HOME</a></li>
+					<li><a href="books.jsp">BOOKS</a></li>
+					<li><a href="Account.jsp">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
 			<img src="images/menu.png" class="menu-icon">
