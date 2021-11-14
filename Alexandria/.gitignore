@@ -1,1 +1,13 @@
 /target/
+
+Alexandria/.classpath
+Alexandria/.settings/org.eclipse.jdt.core.prefs
+Alexandria/.settings/org.eclipse.wst.common.component
+Alexandria/.settings/org.eclipse.wst.common.project.facet.core.xml
+
+Alexandria/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+Alexandria/target/m2e-wtp/web-resources/META-INF/
+Alexandria/target/
+
+Alexandria/src/main/webapp/books.jsp
+Alexandria/src/main/webapp/booksCSS.css

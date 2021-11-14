@@ -14,7 +14,7 @@
 	<div class="main-background">
 	
 		<div class="navbar">
-			<img src="images/logo.png" class="logo">
+			<img src="/usr/share/images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
@@ -23,7 +23,7 @@
 					<li><a href="Account.jsp">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
-			<img src="images/menu.png" class="menu-icon">
+			<img src="/usr/share/images/menu.png" class="menu-icon">
 		</div>
 		
 		<div class="header" style="display: flex; align-items: center;">
@@ -44,7 +44,7 @@
 			<div class="main-content-entry">
 				<!-- Books are cards. Below is a template example. -->
 				<!-- Also should probably make it so the image path is from /usr/share/images on the ubuntu server. -->
-				<div class="card" style="background-image: url(images/sea-bear.png);">
+				<div class="card" style="background-image: url(/usr/share/images/sea-bear.png);">
 					<!-- You can put the book name, author, etc. here -->
 				</div>
 				<!-- Below are example book cards that use css to configure the background image. Probably not what we want. -->

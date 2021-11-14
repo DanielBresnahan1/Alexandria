@@ -11,7 +11,7 @@
 
 	<div class="main-background">
 		<div class="navbar">
-			<img src="images/logo.png" class="logo">
+			<img src="/usr/share/images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
@@ -20,7 +20,7 @@
 					<li><a href="Account.jsp">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
-			<img src="images/menu.png" class="menu-icon">
+			<img src="/usr/share/images/menu.png" class="menu-icon">
 		</div>
 		
 		<div class="main-content">
