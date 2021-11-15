@@ -10,7 +10,7 @@
 <body>
 	<div class="main-background">
 		<div class="navbar">
-			<img src="${pageContext.request.contextPath}/images/logo.png" class="logo">
+			<img src="/usr/share/images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
@@ -19,7 +19,7 @@
 					<li><a href="accounts.html">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
-			<img src="${pageContext.request.contextPath}/images/menu.png" class="menu-icon">
+			<img src="/usr/share/images/menu.png" class="menu-icon">
 		</div>
 		<div class="header" style="display: flex; align-items: center;">
 			<h1>Book Search</h1>
