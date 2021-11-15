@@ -15,7 +15,7 @@ function createSearch(){
 			
 			var div = document.createElement("div");
 			div.className = "card";
-			var image = "/Alexandria/images/books/" + book[0].split(' ').join("-") + ".jpg";
+			var image = "/usr/share/images/books/" + book[0].split(' ').join("-") + ".jpg";
 			//div.style.backgroundImage = image;
 			div.setAttribute("style", "background-image: url(" + image + ");");
 			div.id = book[0];
