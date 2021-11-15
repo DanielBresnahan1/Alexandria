@@ -1,9 +1,15 @@
-@charset "ISO-8859-1";
-
 *{
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", sans-serif; 
+}
+
+
+.label {
+  color: white;
+  padding: 1px;
+  font-family: Arial;
+  background-color: #990000;
 }
 
 .main-background{
@@ -40,11 +46,11 @@
 .main-content{
 	display: flex;
 	height: 70%;
-	align-items: center;
+	padding-top: 15px;
 }
 
 .main-content-entry{
-	flex-basis: 50%; 
+	flex-basis: 100%; 
 }
 
 .card{
@@ -66,21 +72,6 @@
 	transform: translateY(-10px);
 }
 
-.card1{
-	background-image: url(./images/sea-bear.png);
-}
-
-.card2{
-	background-image: url(./images/sexy.jpg);
-}
-
-.card3{
-	background-image: url(./images/smothering.jpg);
-}
-
-.card4{
-	background-image: url(./images/saxton.jpg);
-}
 
 h1{
 	color: #fff;

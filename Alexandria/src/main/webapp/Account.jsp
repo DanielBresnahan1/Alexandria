@@ -14,16 +14,16 @@
 	<div class="main-background">
 	
 		<div class="navbar">
-			<img src="/usr/share/images/logo.png" class="logo">
+			<img src="./images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
 					<li><a href="home.jsp">HOME</a></li>
-					<li><a href="books.jsp">BOOKS</a></li>
+					<li><a href="bookSearch.jsp">BOOKS</a></li>
 					<li><a href="Account.jsp">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
-			<img src="/usr/share/images/menu.png" class="menu-icon">
+			<img src="./images/menu.png" class="menu-icon">
 		</div>
 		
 		<div class="header" style="display: flex; align-items: center;">

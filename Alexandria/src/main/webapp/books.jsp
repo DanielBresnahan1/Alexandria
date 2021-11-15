@@ -12,7 +12,7 @@
 	<div class="main-background">
 	
 		<div class="navbar">
-			<img src="/usr/share/images/logo.png" class="logo">
+			<img src="./images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
@@ -33,19 +33,19 @@
 		
 		<div class="main-content">
 			<div class="main-content-entry">
-				<div class="card" style="background-image: url(/usr/share/images/books/kill-mockingbird.jpg);">
+				<div class="card" style="background-image: url(./images/books/kill-mockingbird.jpg);">
 					<!--  
 						<h3>Stopping Sea-Bears</h3>
 						<p>Stuff</p>
 					-->
 				</div>
-				<div class="card" style="background-image: url(/usr/share/images/books/hobbit.jpg);">
+				<div class="card" style="background-image: url(./images/books/hobbit.jpg);">
 					<!--  
 					<h3>News2</h3>
 					<p>Stuff</p>
 					-->
 				</div>
-				<div class="card" style="background-image: url(/usr/share/images/books/pride-prejudice.jpg);">
+				<div class="card" style="background-image: url(./images/books/pride-prejudice.jpg);">
 					<!--  
 					<h3>News3</h3>
 					<p>Stuff</p>

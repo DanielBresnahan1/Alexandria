@@ -11,3 +11,5 @@ Alexandria/target/
 
 Alexandria/src/main/webapp/books.jsp
 Alexandria/src/main/webapp/booksCSS.css
+
+.metadata/
