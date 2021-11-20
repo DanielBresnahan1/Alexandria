@@ -11,6 +11,12 @@ function login() {
 	getLogin(username, password);	
 }
 
+function addAccount() {
+	var username = document.getElementById("inputUsernameId").value;
+	var email = document.getElementById("inputEmail").value;
+	var password = document.getElementById("inputPasswordId").value;
+	addAccountCall(username, email, password);
+}
 function logout() {
 	location.reload();
 }
@@ -28,13 +34,23 @@ function getLogin(username, password){
 				document.getElementById("mainContent").style.display = 'inline';
 				document.getElementById("username").value = '';
 				document.getElementById("password").value = '';	
-			//	$(document).ready(function() {
-			//	for (let i = 0; i < checkedOutBooks.length; i++) {
-    		//	$("ul").append('<li style=\'color: white; margin-left:700px;\'>' + checkedOutBooks[i] + '</li>');
-			//	}
-    		//	});
 			},
 			dataType:"json",
+			error: function (error) {
+			console.log(error)}
+	});
+	
+}
+function addAccountCall(username, email, password){
+	 
+    $.ajax({
+			url: "AddAccount.jsp",
+			type: 'POST',
+			data: {userName: username, password: password, email: email},
+			success: function(data) {
+				location.reload();
+			},
+			dataType:"text",
 			error: function (error) {
 			console.log(error)}
 	});

@@ -48,4 +48,29 @@ public class Util {
 	      }
 	   return acct;
 }
+   
+   public static void addAccount(String userName, String email, String password) throws Exception {
+	   try {
+		   Class.forName(driver);
+	   } catch (ClassNotFoundException e) {
+		   e.printStackTrace();
+	   }
+	   try {
+		   connection = DriverManager.getConnection(url, dbUser, dbPassword);
+	   } catch (Exception e) {
+		   e.printStackTrace();
+		   throw e;
+	   }
+	   
+	   try {
+	         String selectSQL = "INSERT into account(userName, email, checkedOut, password) values('" 
+	   + userName + "','" + email + "'," + "null," + "'" + password + "')";
+	         System.out.println(selectSQL);
+	         PreparedStatement preparedStatement = connection.prepareStatement(selectSQL);
+	         preparedStatement.executeUpdate();
+	         connection.close();
+	      } catch (SQLException e) {
+	         e.printStackTrace();
+	      }
+}
 }
