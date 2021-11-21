@@ -25,6 +25,14 @@
 			</nav>
 			<img src="/usr/share/images/menu.png" class="menu-icon">
 		</div>
+		<div class="header" style="display: flex; align-items: center;">		
+			<form style="margin-left: 590px;">
+				<input type="text" id="inputEmail" placeholder="Email..."><br>
+				<input type="text" id="inputUsernameId" placeholder="Username..."><br>
+				<input type="password" id="inputPasswordId" placeholder="Password..."><br>
+			</form>
+			<button type="button" onclick="addAccount()" id="createAccountButton" style="margin-left:25px;">Create account</button>
+		</div>
 		
 		<div class="header" style="display: flex; align-items: center;">
 			<h1>My Account</h1>
@@ -37,7 +45,7 @@
 			<!-- "style="margin-top: 0px; margin-left: 25px; display:none" -->
 			<button type="button" onclick="login()"  id="loginButton" style="margin-top: 0px; margin-left: 25px;">Login</button>
 			<button type="button" onclick="logout()" id="logoutButton" style="margin-top: 0px; margin-left: 25px;">Logout</button>
-
+			<br/>
 		</div>
 		
 		<div class="main-content" id="mainContent" style="display:none">
