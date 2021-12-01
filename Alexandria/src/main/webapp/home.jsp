@@ -11,7 +11,7 @@
 
 	<div class="main-background">
 		<div class="navbar">
-			<img src="/usr/share/images/logo.png" class="logo">
+			<img src="images/logo.png" class="logo">
 			<!-- need better image logo -->
 			<nav>
 				<ul>
@@ -20,7 +20,7 @@
 					<li><a href="Account.jsp">MY ACCOUNT</a></li>
 				</ul>
 			</nav>
-			<img src="/usr/share/images/menu.png" class="menu-icon">
+			<img src="images/menu.png" class="menu-icon">
 		</div>
 		
 		<div class="main-content">
@@ -33,25 +33,25 @@
 				</a>
 			</div>
 			<div class="main-content-entry">
-				<div class="card card1">
+				<div id="sea-bears" class="card">
 					<!--  
 						<h3>Stopping Sea-Bears</h3>
 						<p>Stuff</p>
 					-->
 				</div>
-				<div class="card card2">
+				<div id="sexy-trump" class="card">
 					<!--  
 					<h3>News2</h3>
 					<p>Stuff</p>
 					-->
 				</div>
-				<div class="card card3">
+				<div id="smothering" class="card">
 					<!--  
 					<h3>News3</h3>
 					<p>Stuff</p>
 					-->
 				</div>
-				<div class="card card4">
+				<div id="saxton-hale" class="card">
 					<!--  
 					<h3>News4</h3>
 					<p>Stuff</p>
@@ -62,6 +62,21 @@
 		
 	</div>
 	
+	<!-- modal box tutorial content adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+	<!-- The Modal -->
+	<div id="modal-box" class="modal">
+	
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span id="modal-closer">&times;</span>
+	    <h1 id="modal-box-header">modal box header holder</h1>
+	    <p id="modal-box-text">modal box text holder</p>
+	  </div>
+	
+	</div>
+	<!-- end of modal box tutorial content -->
+	
 
+<script type="text/javascript" src="home.js"></script> <!-- This is at the button to avoid load order errors. Neat! -->
 </body>
 </html>
