@@ -15,7 +15,7 @@
 .main-background{
 	width: 100%;
 	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url("/usr/share/images/main-background.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url("./images/main-background.jpg");
 	background-position: center;
 	background-size: cover; 
 	padding-left: 8%;

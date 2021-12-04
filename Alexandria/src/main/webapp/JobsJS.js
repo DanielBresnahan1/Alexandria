@@ -15,8 +15,11 @@ function createSearch(){
 			
 			var div = document.createElement("div");
 			div.className = "card";
-			var image = "/usr/share/images/books/" + book[0].split(' ').join("-") + ".jpg";
+			var image = "./images/books/" + book[0].split(' ').join("-") + ".jpg";
 			//div.style.backgroundImage = image;
+			div.addEventListener('click', function(){
+				checkOutBook(book[2]);
+			});
 			div.setAttribute("style", "background-image: url(" + image + ");");
 			div.id = book[0];
 			
@@ -35,6 +38,38 @@ function createSearch(){
 	}, title, genre, isbn, author);
 }
 
+function checkOutBook(isbn){
+	selectText(function(bookText){
+		console.log(bookText[0]);
+		location.href = 'books/' + bookText[0];
+		
+	}, isbn);
+	
+}
+
+function selectText(callback, isbn){
+	
+	console.log("Begin Text Selection");
+	
+	var isbn = isbn;
+	
+	$.ajax({
+			url: "Text.jsp",
+			method: 'GET',
+			data: {ISBN: isbn},
+			success: function(data) {
+				bookText = data;
+				callback(bookText);
+				return false;
+			},
+			dataType:"json",
+			error: function (data) {
+				console.log(data);
+				console.log("text lookup Failed");
+			}
+	});
+	
+}
 
 function searchBooks(callback, title, genre, isbn, author){
 	var books_list = new Array();
