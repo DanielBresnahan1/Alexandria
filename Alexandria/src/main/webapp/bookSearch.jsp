@@ -44,5 +44,3 @@
 <script src="jquery.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/JobsJS.js"></script>
 
-</body>
-</html>
