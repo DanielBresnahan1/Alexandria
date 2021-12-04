@@ -1,5 +1,8 @@
 /target/
 
+/.settings/
+/.metadata/
+
 Alexandria/.classpath
 Alexandria/.settings/org.eclipse.jdt.core.prefs
 Alexandria/.settings/org.eclipse.wst.common.component
@@ -11,5 +14,3 @@ Alexandria/target/
 
 Alexandria/src/main/webapp/books.jsp
 Alexandria/src/main/webapp/booksCSS.css
-
-.metadata/
