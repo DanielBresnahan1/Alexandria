@@ -18,6 +18,8 @@ function addAccount() {
 	addAccountCall(username, email, password);
 }
 function logout() {
+	document.cookie = 'loggedIn=';
+	console.log(document.cookie);
 	location.reload();
 }
 
@@ -30,10 +32,27 @@ function getLogin(username, password){
 			success: function(data) {
 				account = data;
 				loggedIn = true;
-				checkedOutBooks = account.checkedOutBooks.checkedOut;
+				if (account.checkedOutBooks != null) {				
+					checkedOutBooks = account.checkedOutBooks.checkedOut;
+					var length = checkedOutBooks.length;
+        
+        		for(var i=0; i<length; i++){
+            
+            		var book = checkedOutBooks[i];
+            
+            		var div = document.createElement("div");
+            		div.className = "card";
+            		var image = "./images/books/" + book[0].split(' ').join("-") + ".jpg";
+           			div.setAttribute("style", "background-image: url(" + image + ");");
+           			div.id = book[0];
+            
+            		document.getElementsByClassName("main-content-entry")[0].appendChild(div);
+				
+				}
 				document.getElementById("mainContent").style.display = 'inline';
 				document.getElementById("username").value = '';
 				document.getElementById("password").value = '';	
+			}
 			},
 			dataType:"json",
 			error: function (error) {
@@ -55,3 +74,4 @@ function addAccountCall(username, email, password){
 			console.log(error)}
 	});
 }
+

@@ -11,6 +11,8 @@
 			if (acct != null) {
 				acct.deserialize();
 				response.getWriter().print(objectMapper.writeValueAsString(acct));
+				Cookie cookie = new Cookie("loggedIn", acct.getUserName());
+				response.addCookie(cookie);
 		} else {
 			response.getWriter().print("");
 		}

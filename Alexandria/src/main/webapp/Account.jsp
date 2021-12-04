@@ -50,18 +50,7 @@
 		
 		<div class="main-content" id="mainContent" style="display:none">
 			<div class="main-content-entry">
-				<!-- Books are cards. Below is a template example. -->
-				<!-- Also should probably make it so the image path is from /usr/share/images on the ubuntu server. -->
-				<div class="card" style="background-image: url(/usr/share/images/sea-bear.png);">
-					<!-- You can put the book name, author, etc. here -->
-				</div>
-				<!-- Below are example book cards that use css to configure the background image. Probably not what we want. -->
-				<div class="card card2">
-				</div>
-				<div class="card card3">
-				</div>
-				<div class="card card4">
-				</div>
+
 			</div>
 		</div>
 		
