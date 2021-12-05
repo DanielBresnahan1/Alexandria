@@ -3,9 +3,11 @@
 /META-INF/
 
 
-.classpath
-.project
+.classpath/
+.project/
 .settings/
+
+.metadata/
 
 /.settings/
 /.metadata/
