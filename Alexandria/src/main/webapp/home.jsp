@@ -33,25 +33,25 @@
 				</a>
 			</div>
 			<div class="main-content-entry">
-				<div id="sea-bears" class="card">
+				<div id="sea-bears" class="card" style="background-image: url(./images/sea-bear.png);">
 					<!--  
 						<h3>Stopping Sea-Bears</h3>
 						<p>Stuff</p>
 					-->
 				</div>
-				<div id="sexy-trump" class="card">
+				<div id="sexy-trump" class="card" style="background-image: url(./images/sexy.jpg);">
 					<!--  
 					<h3>News2</h3>
 					<p>Stuff</p>
 					-->
 				</div>
-				<div id="smothering" class="card">
+				<div id="smothering" class="card" style="background-image: url(./images/smothering.jpg);">
 					<!--  
 					<h3>News3</h3>
 					<p>Stuff</p>
 					-->
 				</div>
-				<div id="saxton-hale" class="card">
+				<div id="saxton-hale" class="card" style="background-image: url(./images/saxton.jpg);">
 					<!--  
 					<h3>News4</h3>
 					<p>Stuff</p>

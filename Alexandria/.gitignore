@@ -1,11 +1,14 @@
 /target/
 
-/META-INF/
+/META-INF/*
 
 
 .classpath/
 .project/
 .settings/
+
+/pom.properties
+
 
 .metadata/
 
