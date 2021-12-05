@@ -76,7 +76,6 @@ public class Account {
 	    }
 	    
 	    public String getSerialized() {
-	    	System.out.println(checkedOutString);
 	    	return checkedOutString;
 	    }
 	    
