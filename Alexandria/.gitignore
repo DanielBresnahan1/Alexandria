@@ -1,5 +1,15 @@
 /target/
 
+/META-INF/
+
+
+.classpath
+.project
+.settings/
+
+/.settings/
+/.metadata/
+
 Alexandria/.classpath
 Alexandria/.settings/org.eclipse.jdt.core.prefs
 Alexandria/.settings/org.eclipse.wst.common.component

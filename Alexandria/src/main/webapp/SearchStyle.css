@@ -1,59 +1,15 @@
-/*
-@charset "UTF-8";
-body {
-	background-image: url('library.jpg'); 
-	background-repeat: no-repeat; 
-	background-size:1920px 1080px;
-}
-
-#loginDiv {
-	margin-left:1100px;
-}
-
-#userNameBlock {
-	margin-bottom:10px;
-}
-
-#userNameLabel {
-	color: white;
-}
-
-#passwordLabel {
-	color:white;
-}
-
-#logOutButtonDiv {
-	display:none;
-}
-
-#logoutButton {
-	margin-left:1200px;
-	display:none;
-}
-
-#pleaseLoginId {
-	color:white;
-}
-
-#checkedOutBooksHeading {
-	color:white;
-}
-
-#checkedOutBooksDiv {
-	margin-left:600px;
-	display: none;
-	color: white;
-}
-
-does the charset matter?
-*/
-
-@charset "ISO-8859-1";
-
 *{
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", sans-serif; 
+}
+
+
+.label {
+  color: white;
+  padding: 1px;
+  font-family: Arial;
+  background-color: #990000;
 }
 
 .main-background{
@@ -90,7 +46,7 @@ does the charset matter?
 .main-content{
 	display: flex;
 	height: 70%;
-	align-items: center;
+	padding-top: 15px;
 }
 
 .main-content-entry{
@@ -116,21 +72,6 @@ does the charset matter?
 	transform: translateY(-10px);
 }
 
-.card1{
-	background-image: url(./images/sea-bear.png);
-}
-
-.card2{
-	background-image: url(./images/sexy.jpg);
-}
-
-.card3{
-	background-image: url(./images/smothering.jpg);
-}
-
-.card4{
-	background-image: url(./images/saxton.jpg);
-}
 
 h1{
 	color: #fff;
