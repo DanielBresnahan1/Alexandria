@@ -18,7 +18,7 @@ function createSearch(){
 			var image = "./images/books/" + book[0].split(' ').join("-") + ".jpg";
 			//div.style.backgroundImage = image;
 			div.addEventListener('click', function(){
-				checkOutBook(book[2]);
+				checkOutBook(book[0], book[1], book[2], book[3]);
 			});
 			div.setAttribute("style", "background-image: url(" + image + ");");
 			div.id = book[0];
@@ -38,12 +38,41 @@ function createSearch(){
 	}, title, genre, isbn, author);
 }
 
-function checkOutBook(isbn){
+function checkOutBook(title, genre, isbn, author){
+	
 	selectText(function(bookText){
-		console.log(bookText[0]);
-		location.href = 'books/' + bookText[0];
 		
+		checkoutBook(function(AccountName){
+			return AccountName;
+		}, title, genre, isbn, author);
+		
+		console.log('books/' + bookText[0]);
+		
+		location.href = 'books/' + bookText[0];
 	}, isbn);
+	
+	console.log(location);
+	
+}
+
+
+
+function checkoutBook(callback, title, genre, isbn, author){
+	
+	$.ajax({
+			url: "AccountHandler.jsp",
+			method: 'GET',
+			data: {title, genre, isbn, author},
+			success: function(data) {
+				AccountName = data;
+				callback(AccountName);
+				return false;
+			},
+			dataType:"json",
+			error: function (data) {
+				console.log("Account Lookup Failed");
+			}
+	});
 	
 }
 

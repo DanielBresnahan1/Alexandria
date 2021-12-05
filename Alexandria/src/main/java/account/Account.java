@@ -70,10 +70,13 @@ public class Account {
 	    }
 
 	    public void deserialize() throws IOException {
-	        this.checkedOut = objectMapper.readValue(checkedOutString, Map.class);
+	    	if (this.checkedOutString != null) {	    		
+	    		this.checkedOut = objectMapper.readValue(checkedOutString, Map.class);
+	    	}
 	    }
 	    
 	    public String getSerialized() {
+	    	System.out.println(checkedOutString);
 	    	return checkedOutString;
 	    }
 	    
