@@ -19,7 +19,7 @@ public class Invalid {
   JavascriptExecutor js;
   @Before
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "");
+    System.setProperty("webdriver.chrome.driver", "D:\\CSCI_4830_2\\workspace4830\\Alexandria\\AlexandriaTestCases\\lib\\win\\chromedriver.exe");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -29,14 +29,18 @@ public class Invalid {
   @Test
   public void testInvalid() throws Exception {
     driver.get("http://ec2-18-217-199-195.us-east-2.compute.amazonaws.com:8080/Alexandria/bookSearch.jsp");
+    driver.manage().window().maximize();
     driver.findElement(By.id("title")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Book Search'])[1]/following::div[1]")).click();
+    Thread.sleep(2000);
     driver.findElement(By.id("title")).clear();
     driver.findElement(By.id("title")).sendKeys("");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Book Search'])[1]/following::div[1]")).click();
+    Thread.sleep(2000);
     driver.findElement(By.id("isbn")).clear();
     driver.findElement(By.id("isbn")).sendKeys("");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Book Search'])[1]/following::div[1]")).click();
+    Thread.sleep(2000);
     driver.findElement(By.id("genre")).clear();
     driver.findElement(By.id("genre")).sendKeys("");
     driver.findElement(By.id("author")).click();
@@ -46,6 +50,7 @@ public class Invalid {
     driver.findElement(By.id("title")).clear();
     driver.findElement(By.id("title")).sendKeys("Pride And Prejudice");
     driver.findElement(By.xpath("//button[@type='button']")).click();
+    Thread.sleep(2000);
   }
 
   @After

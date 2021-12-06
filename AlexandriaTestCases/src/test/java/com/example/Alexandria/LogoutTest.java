@@ -1,4 +1,4 @@
-package accountTests;
+package test.java.com.example.Alexandria;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +19,7 @@ public class LogoutTest {
   JavascriptExecutor js;
   @Before
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "lib/mac/chromedriver");
+    System.setProperty("webdriver.chrome.driver", "D:\\CSCI_4830_2\\workspace4830\\Alexandria\\AlexandriaTestCases\\lib\\win\\chromedriver.exe");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -29,6 +29,7 @@ public class LogoutTest {
   @Test
   public void testLogout() throws Exception {
     driver.get("http://ec2-18-217-199-195.us-east-2.compute.amazonaws.com:8080/Alexandria/Account.jsp");
+    driver.manage().window().maximize();
     driver.findElement(By.id("username")).click();
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("testUser");

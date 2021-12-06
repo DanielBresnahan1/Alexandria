@@ -1,4 +1,4 @@
-package accountTests;
+package test.java.com.example.Alexandria;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.junit.*;
@@ -18,7 +18,7 @@ public class CreateAccountTest {
   JavascriptExecutor js;
   @Before
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "lib/mac/chromedriver");
+    System.setProperty("webdriver.chrome.driver", "D:\\CSCI_4830_2\\workspace4830\\Alexandria\\AlexandriaTestCases\\lib\\win\\chromedriver.exe");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -28,14 +28,23 @@ public class CreateAccountTest {
   @Test
   public void testCreateAccount() throws Exception {
     driver.get("http://ec2-18-217-199-195.us-east-2.compute.amazonaws.com:8080/Alexandria/Account.jsp");
+    driver.manage().window().maximize();
     driver.findElement(By.id("inputEmail")).click();
+    Thread.sleep(2000);
     driver.findElement(By.id("inputEmail")).clear();
+    Thread.sleep(2000);
     driver.findElement(By.id("inputEmail")).sendKeys("createAccount@unomaha.edu");
+    Thread.sleep(2000);
     driver.findElement(By.id("inputUsernameId")).clear();
+    Thread.sleep(2000);
     driver.findElement(By.id("inputUsernameId")).sendKeys("createAccountUser");
+    Thread.sleep(2000);
     driver.findElement(By.id("inputPasswordId")).clear();
+    Thread.sleep(2000);
     driver.findElement(By.id("inputPasswordId")).sendKeys("createAccountPassword");
+    Thread.sleep(2000);
     driver.findElement(By.id("createAccountButton")).click();
+    Thread.sleep(2000);
   }
 
   @After
