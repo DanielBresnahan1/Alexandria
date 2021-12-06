@@ -28,7 +28,7 @@
 				<h1>OnLibrary</h1>
 				<p>Make everything yours.</p>
 				<!-- It's all yours. ? -->
-				<a href="search.html">
+				<a href="bookSearch.jsp">
 					<button type="button">Search Library</button>
 				</a>
 			</div>
